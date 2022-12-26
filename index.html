@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+  <title>Frontend Mentor | Calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body>
+
+ <div class="container">
+   
+   <div class="top">
+     <h1>calc</h1>
+     
+   <div> 
+   <p>Theme</p>
+  <div class="tri-state-toggle">
+      <input class="button" type="radio" name="toggle" id="one" />
+      <input class="button" type="radio" name="toggle" id="two" />
+      <input class="button" type="radio" name="toggle" id="three" />
+    </div>
+  </div>
+   </div>
+   
+   <div class="screenCont">
+     <div>
+     <input  value="" readonly class="screen" />
+     </div>
+   </div>
+   
+   <div class="btn-cont">
+     
+     <div class="btns">
+     <button onclick="input('7')">7</button>
+     <button  onclick="input('8')" >8</button>
+     <button  onclick="input('9')"class="btn">9</button>
+    <button id="del">Del</button>
+     <button  onclick="input('4')">4</button>
+     <button  onclick="input('5')">5</button>
+     <button onclick="input('6')">6</button>
+     
+     <button id="plus" onclick="input('+')" >+</button>
+     
+     <button  onclick="input('1')">1</button>
+     <button onclick="input ('2')">2</button>
+     <button onclick="input('3')">3</button>
+     <button id="minus" onclick="input('-')"> - </button>
+     <button onclick="input('.')">.</button>
+     <button value="0" onclick="input ('0')">0</button>
+     <button id="divide" onclick="input('/')">/</button>
+     <button id="times" onclick="input('*')">×</button>
+  
+    <button id="reset">Reset</button>
+     <button id="calc" > = </button>
+      
+     </div>
+   </div>
+
+ </div>
+
+
+
+
+
+
+
+
+
+  
+ <!--<div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Astro vector</a> -->
+    
+  </div>
+  <script src="index.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>

@@ -1,0 +1,196 @@
+/*General styles*/
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+   box-sizing: border-box;
+}
+
+/* The Body */
+
+html,body{
+  height: 100%;
+  width: 100%;
+}
+
+body{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color:hsl(222,26%,31%);
+  font-family: 'League Spartan',Sans-Serif;
+  color: black;
+}
+.container{
+  align-items: center;
+  width:375px;
+  height:500px;
+  display:flex;
+  flex-direction: column;
+  font-family: inherit;
+}
+.top{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  color:white;
+ font-family: inherit;
+}
+.top > div{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  color: white;
+  width: 160px;
+  text-align: end;
+  font-family: inherit;
+}
+
+.screenCont{
+  width:90%;
+  text-align: center;
+  padding: 20px 0;
+ 
+}
+
+.screen{
+  width: 100%;
+  height: 76px;
+  padding: 10px 0;
+  border: none;
+  outline: none;
+  text-align: end;
+  font-size: 32px;
+  border-radius: 8px;
+  background-color:hsl(224, 36%, 15%);
+  color:white;
+  font-family: inherit;
+}
+.btn-cont{
+  width:90%;
+  height: 500px;
+  background-color:hsl(223, 31%, 20%);
+  border-radius: 8px;
+}
+.btns{
+  margin:20px;
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 10px;
+  user-select: none;
+  font-family: inherit;
+ 
+}
+.btns button{
+  font-family:inherit;
+  padding: 11px;
+  box-shadow:-0.51px 3px hsl(28, 16%, 65%);
+  font-size: 32px;
+  font-weight: bold;
+  background-color:hsl(30, 25%, 89%);
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  color:hsl(221, 14%, 31%);
+  transition: transform .8s;
+
+}
+button:hover{
+
+}
+.btns button:nth-of-type(17){
+  grid-column: 1 / span 2;
+  color: white;
+  background-color:hsl(225, 21%, 49%);
+  box-shadow:-0.51px 3px hsl(224, 28%, 35%)
+}
+.btns button:nth-of-type(18){
+  grid-column: 3 / span 2;
+  background-color: hsl(6, 63%, 50%);
+  box-shadow:-0.51px 3px hsl(6, 70%, 34%);
+  
+  color: white;
+}
+.btns button:nth-of-type(4){
+ color: white;
+ background-color:hsl(225, 21%, 49%);
+ box-shadow:-0.51px 3px hsl(224, 28%, 35%)
+}
+.tri-state-toggle {
+  display: flex;
+  justify-content: center;
+  border: none;
+ background-color:hsl(223, 31%, 20%);
+  border-radius: 50px;
+}
+.tri-state-toggle >input {
+  height: 30px;
+  width: 30px;
+  appearance: none;
+  border-radius: 50%;
+  opacity:0;
+  background-color:hsl(6, 63%, 50%);
+}
+.tri-state-toggle > input:hover{
+  cursor: pointer;
+}
+
+
+#one{
+  opacity: 1;
+
+}
+
+.screen-mode-1{
+  background-color:hsl(224, 36%, 15%);
+}
+.btn-cont-mode-1{
+  background-color:hsl(223,31%,20%);
+}
+.toggle-mode-1{
+  background-color:hsl(223, 31%, 20%);
+}
+.btn-color-mode-1{
+  background-color:hsl(225,21%,49%);
+ 
+  box-shadow:-0.51px 3px #404e72;
+}
+.screen-mode-2{
+  background-color:hsl(0, 0%, 93%);
+  
+}
+.btn-cont-mode-2{
+  background-color:hsl(0, 5%, 81%);
+}
+.toggle-mode-2{
+  background-color:hsl(0, 5%, 81%);
+
+}
+.btn-color-mode-2{
+  
+  box-shadow:-0.51px 3px hsl(35, 11%, 61%);
+  background-color: hsl(35, 11%, 61%);
+}
+/*.........*/
+
+.screen-mode-3{
+  background-color:hsl(268, 71%, 12%);
+}
+.btn-cont-mode-3{
+  background-color:hsl(268, 71%, 12%);
+}
+.toggle-mode-3{
+  background-color:hsl(268, 71%, 12%);
+}
+.btn-color-mode-3{
+  background-color:hsl(281,89%,26%);
+
+  box-shadow:-0.51px 3px hsl(285, 91%, 52%);
+}
+.active{
+  background-color: "red"
+}
