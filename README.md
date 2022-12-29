@@ -1,2 +1,3 @@
 # Calculator-App
-Frontend Mentor Challenge 
+A FrontendMentor Challenge 
+Made With Vanilla js, html and css.
